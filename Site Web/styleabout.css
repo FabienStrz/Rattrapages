@@ -1,0 +1,274 @@
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('montserrat-bold-webfont.woff2') format('woff2'),
+         url('montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('montserrat-regular-webfont.woff2') format('woff2'),
+         url('montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('raleway-bold-webfont.woff2') format('woff2'),
+         url('raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  margin: auto;
+}
+
+/*header*/
+
+header{
+  width: auto;
+  height: 84px;
+  background-color: #232f43;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 19px 0px;
+}
+
+header div{
+  display: flex;
+  align-items: center;
+}
+
+header nav {
+    margin-right: 40px;
+}
+
+header ul li{
+  display: inline-block;
+  font-family: 'montserratbold';
+  text-transform: uppercase;
+}
+
+header ul.ulNav li{
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+  margin: 0 9px;
+}
+
+header ul.ulNav li a{
+  color: white;
+  text-decoration: none;
+}
+
+header button{
+    width: 155px;
+    height: 31px;
+    background-color: white;
+    color: #232f43;
+    border: none;
+    font-family: 'montserratbold';
+    text-align: center;
+    font-size: 12px;
+    margin: 0 20px;
+}
+
+.ulNoPuce{
+  list-style: none;
+}
+
+/* main */
+main{
+  background-image: url(img/about_main_img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  padding: 130px 700px 130px 121px;
+}
+
+main div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main div div{
+  padding: 76px 59px 0px;
+  height: 600px;
+  width: 640px;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+main h1{
+  font-family: 'ralewaybold';
+  font-size: 30px;
+  color:  #232f43;
+  text-transform: uppercase;
+  padding-bottom: 155px;
+}
+
+main h3{
+  font-family: 'ralewaybold';
+  font-size: 14px;
+  color:  #232f43;
+  text-transform: uppercase;
+  padding: 0px 0px 100px 0px;
+}
+
+main h4{
+  font-family: 'montserratregular';
+  font-size: 12px;
+  padding: 0px 0px 80px 0px;
+  text-align: center;
+}
+
+/* footer */
+footer{
+  background-color: #232f43;
+  height: 175px;
+  padding: 30px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footerLogoText{
+  padding: 0px 0px 20px 0px;
+}
+
+footer ul li{
+  font-family: 'montserratregular';
+  text-transform: capitalize;
+}
+
+footer ul.ulNav li{
+  width: 100px;
+  padding: 6px;
+  text-align: center;
+  font-size: 12px;
+  margin: 0 5px;
+}
+
+footer ul.ulNav li a{
+  color: white;
+  text-decoration: none;
+}
+
+.ulSocialMedia{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+footer h3{
+  font-family: 'montserratregular';
+  font-weight: normal;
+  font-size: 12px;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.cookies{
+  color: #535d6c;
+}
+
+.conditions{
+  color: white;
+}
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 1024px){
+/* main */
+  main{
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+    padding: 100px 0px 100px 70px;
+  }
+
+  main div div{
+    width: 500px;
+  }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 425px){
+/* header */
+
+.headerLogoText{
+  display: none;
+}
+
+header nav{
+  display:none;
+}
+
+header div button{
+  display: none;
+}
+
+/*main*/
+
+main{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main h1{
+    padding: 0px 0px 40px 0px;
+}
+
+main div div{
+  width: 300px;
+  height: 700px;
+}
+
+main h4{
+  text-align: left;
+}
+/* footer */
+
+footer{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLogoText{
+  padding: 0px 0px 20px 0px;
+}
+
+
+}

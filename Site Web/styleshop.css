@@ -1,0 +1,277 @@
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('montserrat-bold-webfont.woff2') format('woff2'),
+         url('montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('montserrat-regular-webfont.woff2') format('woff2'),
+         url('montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('raleway-bold-webfont.woff2') format('woff2'),
+         url('raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  margin: auto;
+}
+
+/*header*/
+
+header{
+  width: auto;
+  height: 84px;
+  background-color: #232f43;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 19px 0px;
+}
+
+header div{
+  display: flex;
+  align-items: center;
+}
+
+header nav {
+    margin-right: 40px;
+}
+
+header ul li{
+  display: inline-block;
+  font-family: 'montserratbold';
+  text-transform: uppercase;
+}
+
+header ul.ulNav li{
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+  margin: 0 9px;
+}
+
+header ul.ulNav li a{
+  color: white;
+  text-decoration: none;
+}
+
+header button{
+    width: 155px;
+    height: 31px;
+    background-color: white;
+    color: #232f43;
+    border: none;
+    font-family: 'montserratbold';
+    text-align: center;
+    font-size: 12px;
+    margin: 0 20px;
+}
+
+.ulNoPuce{
+  list-style: none;
+}
+
+
+/* section */
+
+
+
+.bandeau {
+  background-image: url(img/Hoyde_Logo_white_transparent.png);
+  background-color: #ffffff;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.casque_orange {
+  background-image:url(img/Casque_orange.png);
+  background-color: #ffffff;
+  box-sizing: border-box;
+  height: 500px;
+  background-position: 150px 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+
+.casque_vert {
+  background-image:url(img/Casque_vert.png);
+  background-color: #ffffff;
+  box-sizing: border-box;
+  height: 500px;
+  background-position: 150px 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+
+.casque_bleu {
+  background-image:url(img/Casque_bleu.png);
+  background-color: #ffffff;
+  box-sizing: border-box;
+  height: 500px;
+  background-position: 150px 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+
+.casque_rouge {
+  background-image:url(img/Casque_rouge.png);
+  background-color: #ffffff;
+  box-sizing: border-box;
+  height: 500px;
+  background-position: 150px 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+
+main div h4{
+  background: rgba(255, 255, 255, 0.1);
+  background-size: cover;
+  text-align:center;
+  text-transform: full-width;
+}
+
+
+.achat {
+  text-align:left;
+  position: relative;
+  top: 50%;
+  left: 35%;
+  transform: translate(-48%, 745%);
+  color: white;
+  font-size: 26px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* footer */
+footer{
+  background-color: #232f43;
+  height: 175px;
+  padding: 30px 0px 20px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footerLogoText{
+  padding: 0px 0px 95px 0px;
+}
+
+footer ul li{
+  font-family: 'montserratregular';
+  text-transform: capitalize;
+}
+
+footer ul.ulNav li{
+  width: 100px;
+  padding: 6px;
+  text-align: center;
+  font-size: 12px;
+  margin: 0 5px;
+}
+
+footer ul.ulNav li a{
+  color: white;
+  text-decoration: none;
+}
+
+.ulSocialMedia{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+footer h3{
+  font-family: 'montserratregular';
+  font-weight: normal;
+  font-size: 12px;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.cookies{
+  color: #535d6c;
+}
+
+.conditions{
+  color: white;
+}
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 1024px){
+/* section */
+
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+/* section */
+
+
+}
+
+@media (min-width: 320px) and (max-width: 425px){
+/* header */
+
+.headerLogoText{
+  display: none;
+}
+
+header nav{
+  display:none;
+}
+
+header div button{
+  display: none;
+}
+
+/* footer */
+
+footer{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLogoText{
+  padding: 0px 0px 20px 0px;
+}
+
+/*section*/
